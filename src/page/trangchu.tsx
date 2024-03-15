@@ -84,14 +84,6 @@ const TC: React.FC = () => {
       >
         &gt; {/* Right arrow */}
       </button>
-      <div className="absolute bottom-0 left-0 p-4 bg-black text-white">
-        {hoveredMovie && (
-          <>
-            <h2 className="text-lg font-semibold">{hoveredMovie.name}</h2>
-            <p className="text-sm">{hoveredMovie.name}</p>
-          </>
-        )}
-      </div>
     </div>
       </header>
       <main className="container mx-auto p-4">
@@ -159,4 +151,4 @@ const TC: React.FC = () => {
   );
 }
 
-export default TC;``
+export default TC;
