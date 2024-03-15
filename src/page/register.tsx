@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Login: React.FC = () => {
+const Register: React.FC = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       <header className="bg-gray-800">
@@ -28,42 +28,45 @@ const Login: React.FC = () => {
         </div>
       </div>
       </header>
-    <main>
+      <main>
     <div className="flex items-center justify-center min-h-screen bg-gray-900">
       <div className="max-w-md w-full bg-gray-800 p-6 rounded-lg">
         <form className="space-y-4">
-          <div className="text-center text-white">
-            <h2 className="text-2xl font-semibold">Đăng nhập</h2>
+        <div className="text-center text-white">
+            <h2 className="text-2xl font-semibold">Đăng ký</h2>
           </div>
-          <div>
-            <label htmlFor="" className="text-white">
-              Tên Đăng Nhập
-            </label>
-            <input
-              type=""
-              id=""
-              className="w-full p-2 rounded-md"
-              placeholder=""
-            />
-          </div>
-          <div>
-            <label htmlFor="password" className="text-white">Password</label>
-            <input
-              type="password"
-              id="password"
-              className="w-full p-2 rounded-md"
-              placeholder=""
-            />
-          </div>
+          <input
+            type="text"
+            name="username"
+            placeholder="Tên đăng nhập"
+            className="w-full p-2 rounded-md"
+          />
+          <input
+            type="tel"
+            name="phoneNumber"
+            placeholder="Số điện thoại"
+            className="w-full p-2 rounded-md"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            className="w-full p-2 rounded-md"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Mật khẩu"
+            className="w-full p-2 rounded-md"
+          />
           <button
             type="submit"
             className="w-full bg-blue-700 text-white p-2 rounded-md hover:bg-blue-600"
           >
-            Đăng nhập
+            Đăng ký
           </button>
-          <div className="text-center text-white">
-            Nếu bạn chư có tài khoản. hãy <Link to="/register" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-300 underline">
-              Đăng ký
+          <div className="text-center text-white"> Bạn đã có tài khoản. Trở về <Link to="/login" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-300 underline">
+              Đăng nhập
             </Link>
           </div>
         </form>
@@ -85,4 +88,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default Register;
